@@ -6,13 +6,21 @@
   {
     "key": "About Us",
     "url": "/about/"
+  }, 
+  {
+    "key": "Pricing",
+    "url": "/pricing/"
   },
   {
-    "key": "Projects",
-    "url": "/projects/"
+    "key": "FAQ",
+    "url": "/faq/"
   },
   {
     "key": "Reviews",
     "url": "/reviews/"
+  },
+  {
+    "key": "Contact",
+    "url": "/contact/"
   }
 ]
