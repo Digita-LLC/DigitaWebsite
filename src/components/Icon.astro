@@ -1,0 +1,55 @@
+---
+import { ImageMetadata } from "astro";
+import { getImage } from "astro:assets";
+
+// TS types
+interface Props {
+	lightModeUrl: string | ImageMetadata;
+	darkModeUrl: string | ImageMetadata;	
+	alt: string;
+}
+
+const { lightModeUrl, darkModeUrl, alt } = Astro.props;
+
+const lightModeIcon = await getImage({
+	src: lightModeUrl,
+	format: "webp",
+})
+
+const darkModeIcon = await getImage({
+	src: darkModeUrl,
+	format: "webp",
+})
+---
+
+<!-- Adjust the width and height attributes sizes based on the stitch you're using -->
+<picture>
+	<img
+		aria-hidden="true"
+		decoding="async"
+		class="light-mode"
+		src={lightModeIcon.src}
+		alt={alt}
+		loading="lazy"
+	/>
+	<img
+		aria-hidden="true"
+		decoding="async"
+		class="dark-mode"
+		src={darkModeIcon.src}
+		alt={alt}
+		loading="lazy"
+	/>
+</picture>
+
+<style>
+body.dark-mode {
+	.light-mode {
+		display: none;
+	}
+}
+
+.dark-mode {
+	display: none;
+}
+</style>

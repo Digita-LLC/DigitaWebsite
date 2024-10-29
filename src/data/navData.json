@@ -14,13 +14,5 @@
   {
     "key": "FAQ",
     "url": "/faq/"
-  },
-  {
-    "key": "Reviews",
-    "url": "/reviews/"
-  },
-  {
-    "key": "Contact",
-    "url": "/contact/"
-  }
+  } 
 ]

@@ -1,8 +1,8 @@
 {
-	"name": "Code Stitch Web Designs",
-	"email": "help@codestitch.app",
-	"phoneForTel": "555-779-4407",
-	"phoneFormatted": "(555) 779-4407",
+	"name": "Digita Web Designs",
+	"email": "digitasolutionsllc@gmail.com",
+	"phoneForTel": "801-360-8471",
+	"phoneFormatted": "(801) 360-8471",
 	"address": {
 		"lineOne": "First Address Line",
 		"lineTwo": "Second Address Line",
@@ -11,5 +11,5 @@
 		"zip": "80206",
 		"mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
 	},
-	"domain": "www.codestitch.app"
+	"domain": "www.digita-llc.com"
 }

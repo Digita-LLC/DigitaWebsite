@@ -1,0 +1,67 @@
+[
+	{
+		"title": "Lump Sum",
+		"price": "$3500",
+		"subprice": "+$25/mo for hosting",
+		"popular": false,
+		"included": [
+			{
+				"title": "Design and Development",
+				"checkmarked": true
+			},
+			{
+				"title": "$25/mo Hosting",
+				"checkmarked": true
+			},
+			{
+				"title": "$100 fee Per Page after 5 pages",
+				"checkmarked": true
+			},
+			{
+				"title": "+$50/mo Unlimited Edits Add-on",
+				"checkmarked": true
+			},
+			{
+				"title": "24/7 Support",
+				"checkmarked": false
+			},
+			{
+				"title": "Lifetime Updates",
+				"checkmarked": false
+			}
+		]
+	},
+	{
+		"title": "Monthly",
+		"price": "$200",
+		"subprice": "Per Month",
+		"popular": true,
+		"included": [
+			{
+				"title": "Design and Development",
+				"checkmarked": true
+			},
+			{
+				"title": "Hosting Included",
+				"checkmarked": true
+			},
+			{
+				"title": "$100 fee Per Page after 5 pages",
+				"checkmarked": true
+			},
+			{
+				"title": "Unlimited Edits",
+				"checkmarked": true
+			},
+			{
+				"title": "24/7 Support",
+				"checkmarked": true
+			},
+			{
+				"title": "Lifetime Updates",
+				"checkmarked": true
+			}
+		]
+	}
+]
+
