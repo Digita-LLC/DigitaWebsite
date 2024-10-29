@@ -18,7 +18,7 @@ function ariaExpanded(element) {
 }
 
 // Toggles the hamburger mobile menu
-mobileMenuToggle.addEventListener("click", function () {
+mobileMenuToggle?.addEventListener("click", function () {
   toggleMenu();
   ariaExpanded(mobileMenuToggle);
 });
