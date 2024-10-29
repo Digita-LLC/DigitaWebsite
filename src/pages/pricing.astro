@@ -13,53 +13,53 @@ const optimizedImage = await getOptimizedImage(landingImage)
 ---
 
 <BaseLayout
-	title="About"
-	description="Meta description for the page"
-	preloadedImage = {optimizedImage}
+    title="Pricing"
+    description="Pricing | Digita LLC"
+    preloadedImage = {optimizedImage}
 >
 
-	<Landing 
-		title="About Us"
-		image={optimizedImage}
-	/>
+    <Landing 
+        title="About Us"
+        image={optimizedImage}
+    />
 
-	<section id="pricing">
-		<div class="cs-container">
-			<div class="cs-content">
-				<span class="cs-topper">Our Pricing</span>
-				<h2 class="cs-title">Pricing Packages for every budget</h2>
-			</div>
-			<ul class="cs-card-group">
-				{
-				prices.map((price: any) => (
-					<li class={`cs-item ${price.popular && "cs-popular"}`}>
-						<h3 class="cs-h3">{price.title}</h3>
-						<p class="cs-item-text"></p>
-						<div class="cs-option-group">
-							<span class="cs-price">
-								{price.price}
-								<span class="cs-small">{price.subprice}</span>
-							</span>
-						</div>
-						<span class="cs-included">Package Includes</span>
-						<ul class="cs-ul">
-							{
-								price.included.map((included: any) => (
-									<li class="cs-li">
-										<Image class={`cs-li-img ${!included.checkmarked && "cs-disabled"}`} src={CheckMark} alt="icon" width="20" height="20"/> 
-										{included.title}
-									</li>
-								))
-							}
-						</ul>
-						<a href="/contact" class="cs-button-solid">Get Started</a>
-					</li>
-				))
-				}
-			</ul>
-		</div>
-</section>
-	<CTA />
+    <section id="pricing">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Our Pricing</span>
+                <h2 class="cs-title">Pricing Packages for every budget</h2>
+            </div>
+            <ul class="cs-card-group">
+                {
+                prices.map((price: any) => (
+                    <li class={`cs-item ${price.popular && "cs-popular"}`}>
+                        <h3 class="cs-h3">{price.title}</h3>
+                        <p class="cs-item-text"></p>
+                        <div class="cs-option-group">
+                            <span class="cs-price">
+                                {price.price}
+                                <span class="cs-small">{price.subprice}</span>
+                            </span>
+                        </div>
+                    <span class="cs-included">Package Includes</span>
+                        <ul class="cs-ul">
+                            {
+                                price.included.map((included: any) => (
+                                    <li class="cs-li">
+                                        <Image class={`cs-li-img ${!included.checkmarked && "cs-disabled"}`} src={CheckMark} alt="icon" width="20" height="20"/> 
+                                        {included.title}
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                    <a href="/contact" class="cs-button-solid">Get Started</a>
+                    </li>
+                ))
+                }
+            </ul>
+        </div>
+    </section>
+    <CTA />
 </BaseLayout>
 
 <style>/* Mobile */
@@ -203,7 +203,7 @@ const optimizedImage = await getOptimizedImage(landingImage)
             rgba(232, 232, 232, 0.2) 0%,
             #e8e8e8 53.78%,
             rgba(232, 232, 232, 0.2) 100%
-        );
+            );
         opacity: 1;
         position: relative;
         display: block;
