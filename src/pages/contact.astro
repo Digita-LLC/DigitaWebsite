@@ -20,7 +20,7 @@ const optimizedImage = await getOptimizedImage(landingImage)
 	/>
 	<section id="cs-contact">
 		<div class="cs-container">
-			<form id="cs-form" name="Contact Form" method="post">
+			<form id="contact-form" name="Contact" data-netlify="true">
 				<div class="cs-content">
 					<span class="cs-topper">Contact</span>
 					<h2 class="cs-title">Get in Touch</h2>
@@ -63,7 +63,7 @@ const optimizedImage = await getOptimizedImage(landingImage)
 					<input
 						type="text"
 						id="find"
-						name="find-us"
+						name="find"
 						placeholder="How did you find us?"
 					/>
 				</label>
@@ -71,7 +71,7 @@ const optimizedImage = await getOptimizedImage(landingImage)
 					Message
 					<textarea
 						required
-						name="Message"
+						name="message"
 						id="message"
 						placeholder="Write message..."></textarea>
 				</label>
@@ -162,7 +162,7 @@ const optimizedImage = await getOptimizedImage(landingImage)
 			margin-bottom: clamp(2.5rem, 6.3vw, 3rem);
 		}
 
-		#cs-form {
+		#contact-form {
 			margin-bottom: (40/16rem);
 			label {
 				font-size: (16/16rem);
@@ -321,7 +321,7 @@ const optimizedImage = await getOptimizedImage(landingImage)
 /* Tablet - 700px */
 @media only screen and (min-width: 43.75em) {
 	#cs-contact {
-		#cs-form {
+		#contact-form {
 			display: flex;
 			justify-content: space-between;
 			align-items: flex-start;
@@ -349,7 +349,7 @@ const optimizedImage = await getOptimizedImage(landingImage)
 			gap: (80/16rem);
 		}
 
-		#cs-form {
+		#contact-form {
 			max-width: (630/16rem);
 			label {
 				width: 100%;
@@ -381,7 +381,7 @@ const optimizedImage = await getOptimizedImage(landingImage)
 /* Small Desktop - 1300px */
 @media only screen and (min-width: 81.25em) {
 	#cs-contact {
-		#cs-form {
+		#contact-form {
 			column-gap: (0/16rem);
 			label {
 				width: 48%;
@@ -408,7 +408,7 @@ const optimizedImage = await getOptimizedImage(landingImage)
 				color: var(--bodyTextColorWhite);
 			}
 
-			#cs-form {
+			#contact-form {
 				label,
 				input,
 				textarea {
